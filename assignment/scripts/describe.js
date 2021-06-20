@@ -26,8 +26,8 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// We assign the value 'Dane' to the variable 'name'
-// Then, we create a conditional to first check the value of the variable to see
+// First, we declare the variable 'name' and assign it a value of 'Dane'
+// Next, we create a conditional to first check the value of the variable to see
 // if it equals (exact match) 'Mary'
 // If it does, then we console log the output "Hi, Mary!"
 // Otherwise, we console log the output "How do you do?"
@@ -46,10 +46,15 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-//
-//
-//
-//
+// First we declare the variable 'secret'
+// Next, we declare the variable 'code' and assign it a value of 123
+// Then, we create a conditional to function as such: If the variable 'code'
+// exactly matches 123, the system assigns the value 'super' to the variable
+// 'secret' and assigns double the current value of 'code' to the variable
+// 'code', otherwise if the variable 'code' is greater than 250, the system
+// assigns the value 'duper' to the variable 'secret'
+// Finally, we console log the output of secret, which in this case would be
+// "super"
 
 //CODE
 /*
@@ -71,10 +76,20 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
+// First, we declare the following three variables: 'isStudent', 'age', and
+// 'zip'. We also assign the values true to 'isStudent', 34 to 'age', and
+// 55407 to 'zip'.
+// Next, we create a conditional with multiple embedded else if statements. The
+// conditional functions as such: If 'isStudent' exactly matches true AND 'zip'
+// is greater than 80000, then we console log the output "You're a student on
+// the West Coast!" If that condition isn't met, but 'isStudent' exactly matches
+// false OR the value of 'age' is less than 30, then we console log the output
+// "What are your hobbies?" If that condition isn't met either, but 'isStudent'
+// exactly matches true, we console log the output "Welcome to Prime!" and
+// finally, if none of the above conditions are met, we console log the output
+// "How about the weather?"
 //
-//
-//
-//
+// In this instance, we will receive a console output "Welcome to Prime!"
 
 //CODE
 /*
@@ -131,11 +146,14 @@ if (number >= 2) {
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
 /*
+// FIX - colorOne should be set to 'blue'
 let colorOne = 'red';
+// FIX - colorTwo should be set to 'red'
 let colorTwo = 'blue';
 let mix = true;
 
 if (mix === true) {
+// FIX - should replace below line with: colorOne and colorTwo = 'purple';
   colorOne = 'purple';
 }
 */
@@ -146,8 +164,11 @@ if (mix === true) {
 
 /*
 let temp = 40;
+// FIX - time should be a variable, not a constant. Should read: let time = 4;
 const time = 4;
 
+// FIX - the symbol between the two variables should be && for a compound
+// conditional, not || as shown below. || indicates "or", not "and"
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
