@@ -180,8 +180,14 @@ if (temp > 39 || time >= 4) {
 
 /*
 let age = 21;
+// FIX - minAge should be a variable, not a constant. Should read: let
+// minAge = 21;
 const minAge = 21;
 
+// FIX - the comparison symbol of the two variables should be >= for greater
+// than or equal to. It is curently represented by a less than or equal to.
+// Technically the output is still right because the age is equal to the minAge
+// but if altered, it would have the wrong output
 if(minAge <= age) {
   console.log('no entry');
 } else {
